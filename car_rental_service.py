@@ -252,7 +252,7 @@ class RentalManager:
     @staticmethod
     def remove_vehicles():
         # Function to remove vehicles from the list
-        user_input = input("Enter ID of vehicle to be removed: ")
+        user_input = int(input("Enter ID of vehicle to be removed: "))
         for x in Vehicles:
             if x.vehicle_id == user_input:
                 Vehicles.remove(x)
