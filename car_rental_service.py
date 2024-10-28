@@ -43,6 +43,14 @@ Vehicles = []
 # Adding some vehicles to the list
 Vehicles.append(Vehicle(1, "Honda", "Civic", 2021, 5000, True))
 Vehicles.append(LuxuryVehicle(2, "Skoda", "Superb", 2023, 8000, True))
+Vehicles.append(Vehicle(3, "Toyota", "Corolla", 2020, 4500, True))
+Vehicles.append(Vehicle(4, "Ford", "Focus", 2019, 3000, True))
+Vehicles.append(LuxuryVehicle(5, "BMW", "5 Series", 2022, 10000, True))
+Vehicles.append(LuxuryVehicle(6, "Mercedes-Benz", "E-Class", 2021, 9500, True))
+Vehicles.append(Vehicle(7, "Nissan", "Altima", 2018, 2500, True))
+Vehicles.append(Vehicle(8, "Chevrolet", "Malibu", 2017, 2000, True))
+Vehicles.append(LuxuryVehicle(9, "Audi", "A6", 2022, 11000, True))
+Vehicles.append(Vehicle(10, "Hyundai", "Elantra", 2021, 4000, True))
 
 # List to store customers
 Customers = []
@@ -65,7 +73,7 @@ class Customer:
             existing = False
         customer_id = -1
         if existing:
-            existing_id = input("Please enter your ID: ") # Input existing customer ID
+            existing_id = int(input("Please enter your ID: ")) # Input existing customer ID
             for x in Customers:
                 if x.customer_id == existing_id:
                     customer_id = x.customer_id
